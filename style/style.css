@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather+Sans:wght@300;400&family=Quicksand&family=Sacramento&display=swap');
+
+/*
+    font-family: 'Lato', sans-serif;
+
+    font-family: 'Merriweather Sans', sans-serif;
+
+    font-family: 'Sacramento', cursive;
+
+    font-family: 'Quicksand', sans-serif;
+*/
+
+:root {
+    
+    --rosa-claro: #FFDED3;
+    --cinza: #666666;
+    --azul: #2D394B;
+    --azul-escuro: #121D2D;
+    --marrom: #927F79;
+
+}
+
+#header {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 12rem;
+    padding: 2.2rem;
+}
+
+#logo {
+    font-family: 'Sacramento', cursive;
+    font-size: 4.8rem;
+    font-weight: 400;
+    text-align: center;
+    height: 50px;
+}
+
+#sub_logo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#main {
+    display: flex;
+    justify-content: space-between;
+    height: 54.4rem;
+    padding-left: 8rem;
+    background-color: #F7F7FC;
+}
+
+#main_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.titulo {
+    font-family: 'Lato', sans-serif;
+    font-size: 4rem;
+    color: var(--azul);
+    letter-spacing: 0.3rem;
+    font-weight: 400;
+}
+
+.titulo_main {
+    padding: 2.4rem 0rem;
+}
+
+.linha {
+    size: 5;
+    color: var(--rosa-claro);
+}
+
+.texto {
+    font-size: 1.8rem;
+    font-family: 'Lato', sans-serif;
+    color: var(--cinza);
+    width: 80%;
+    line-height: 2.7rem;
+    letter-spacing: 0.1em;
+    padding-top: 2rem;
+}
+
+.maos {
+    position: absolute;
+    top: 21.3rem;
+}
+
+.bg {
+    padding-top: 2.7rem;
+}
+
