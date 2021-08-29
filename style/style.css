@@ -33,7 +33,7 @@
 
 #logo {
     font-family: 'Sacramento', cursive;
-    font-size: 4.8rem;
+    font-size: 5.4rem;
     font-weight: 400;
     text-align: center;
     height: 50px;
@@ -42,7 +42,7 @@
 #sub_logo {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     text-align: center;
 }
 
@@ -89,12 +89,6 @@
 .maos {
     position: absolute;
     top: 21.3rem;
-    transition: 0.5s;
-}
-
-.maos:hover {
-    transform: translate3d(20px, 0, 0);
-    transition: 0.5s;
 }
 
 .bg {
@@ -156,44 +150,21 @@
 }
 
 .foto_about:hover {
-    transform: translate3d(10px, 0, 0);
     -webkit-box-shadow: -15px 15px 0px -2px #FFDED3; 
     box-shadow: -15px 15px 0px -2px #FFDED3;
     transition: 0.5s;
-}
-
-.imagens {
-    width: 23px;
-    filter: invert(9%) sepia(7%) saturate(4393%) hue-rotate(177deg) brightness(100%) contrast(95%);
-}
-
-.footer_icon {
-    width: 20px;
-    filter: invert(9%) sepia(7%) saturate(4393%) hue-rotate(177deg) brightness(100%) contrast(95%);
 }
 
 #servicos {
     background-color: #F7F7FC;
     margin: 0 auto;
     padding: 0rem 2rem 8rem 2rem;
-    background-image: url(/imagens/images/canto_servicos-cut.png);
-    background-repeat: no-repeat;
 }
 
 .serv_title {
     text-align: center;
     padding: 4rem;
     font-weight: 400;
-}
-
-.forma {
-    position: absolute;
-    border-bottom: 42.4rem solid var(--rosa-claro);
-    border-left: 0rem solid transparent;
-    border-right: 20rem solid transparent;
-    left: 0;
-    height: 0;
-    width: 35rem;
 }
 
 .box_descricao {
@@ -203,14 +174,11 @@
     position: relative;
     color: var(--azul);
     font-size: 2rem;
+    background-color: var(--branco);
     padding: 2.2rem 2.5rem 2.2rem 2rem;
     width: 80%;
     border-radius: 10px;
-    background-color: var(--branco);
     margin: 2rem auto;
-    margin-bottom: 3rem;
-    -webkit-box-shadow: 7px 7px 15px -2px rgba(102,102,102,0.10); 
-    box-shadow: 7px 7px 15px -2px rgba(102,102,102,0.10); 
     transition: .9s;
     cursor: pointer;   
 }
@@ -218,7 +186,13 @@
 .box_descricao:hover {
     -webkit-box-shadow: 7px 7px 15px -2px rgba(102,102,102,0.5); 
     box-shadow: 7px 7px 15px -2px rgba(102,102,102,0.5); 
+    background-color: var(--branco);
     transition: .3s;
+}
+
+.icon {
+    width: 20px;
+    filter: invert(9%) sepia(7%) saturate(4393%) hue-rotate(177deg) brightness(100%) contrast(95%);
 }
 
 .svg_desc {
@@ -226,11 +200,40 @@
     cursor: pointer;
 }
 
+
+.imagens {
+    width: 23px;
+    filter: invert(9%) sepia(7%) saturate(4393%) hue-rotate(177deg) brightness(100%) contrast(95%);
+}
+
+.details {
+    display: block;
+    background-color: #F7F7FC;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+}
+
+.details:hover {
+    background-color: #F7F7FC;
+    box-shadow: none;
+}
+
+.details > li {
+    padding-bottom: 1rem;
+}
+
+
 #contatos {
     display: flex;
     align-items: center;
     width: 90%;
     margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#contatos_left {
+    border-right: 1px solid rgba(102, 102, 102, 0.205);
 }
 
 .contatos_size {
@@ -245,29 +248,79 @@
 .info {
     display: flex;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1.7rem;
     padding-left: 0rem;
 }
 
 .info_texto {
-    padding-left: .7rem;
+    padding: 0rem .7rem;
+    padding-bottom: 0.2rem;
     font-size: 1.8rem;
     color: var(--cinza);
 }
 
-.link {
+.social {
+    width: 150px;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
 }
 
-.link::before {
-    content: "";
-    width: 0;
-    text-decoration: underline;
-    padding-bottom: .5rem;
+.social:hover {
+    transform: translateX(1rem);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--rosa-claro);
+    padding: 1rem;
+    color:var(--cinza);
+}
+
+.footer_info {
+    display: flex;
+}
+
+.estilo {
+    margin-right: 1rem;
+}
+
+.social_dev {
+    width: 17px;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.social_dev:hover {
+    transform: scale(1.2);
+    -webkit-transition: .2s;
+    transition: .2s
+}
+
+/*Animação*/
+
+[data-anime] {
+    opacity: 0;
     transition: .5s;
-    -webkit-transition: .5s;
 }
 
-.link:hover {
-    content: "";
-    width: 100%;
+[data-anime="left"] {
+    transform: translate3d(-70px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(70px, 0, 0);
+}
+
+[data-anime="top"] {
+    transform: translate3d(0, -70px, 0);
+}
+
+[data-anime].animado {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
 }

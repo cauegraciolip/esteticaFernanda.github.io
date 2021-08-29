@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/reset.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="imagens/images/favicon.ico" type="image/x-icon">
+    <title>Fernanda Palacio Estética</title>
 </head>
 <body>
-    <header id="header">
+    <header id="header" data-anime="top">
 
         <h1 id="logo">Fernanda Palacio</h1>
         <h2 id="sub_logo">ESTÉTICA AVANÇADA</h2>
@@ -18,7 +19,7 @@
 
     <main id="main">
 
-        <div id="main_left">
+        <div id="main_left" data-anime="left">
 
             <div class="titulo_main">
                 <h2 class="titulo">Fernanda Palacio Estética</h2>
@@ -31,7 +32,7 @@
 
         <div id="main_right">
 
-            <img src="imagens/images/maos-redm.png" alt="maos" class="maos">
+            <img src="imagens/images/maos-redm.png" alt="maos" class="maos" data-anime="right">
             <img src="imagens/images/forma-removebg-cut.png" alt="fundo-bg" class="bg">
 
         </div>
@@ -43,11 +44,11 @@
 
         <div id="saiba_left">
 
-            <img src="imagens/images/imagemsobre-redm.jpg" alt="foto" class="foto_about">
+            <img src="imagens/images/imagemsobre-redm.jpg" alt="foto" class="foto_about" data-anime="left">
 
         </div>
 
-        <div id="saiba_right">
+        <div id="saiba_right" data-anime="right">
 
             <h2 class="titulo saiba">Por que escolher a Fernanda?</h2>
             <h3 class="sub">A estética utiliza dos melhores produtos e as técnicas mais inovadoras do mercado.</h3>
@@ -60,58 +61,74 @@
 
     <section id="servicos">
 
-        <div class="forma"> 
-        </div>
-        <h2 class="titulo serv_title">NOSSOS SERVIÇOS</h2>
+        <h2 class="titulo serv_title" data-anime="top">NOSSOS SERVIÇOS</h2>
 
-        <div class="box_descricao">
+        <div class="box_descricao" data-anime="left">
             <p class="descricao">Tratamentos faciais</p>
-            <img src="imagens/SVG/chevron-down-solid.svg" alt="seta" class="imagens svg_desc">
-
+            <img src="imagens/SVG/chevron-down-solid.svg" alt="seta" class="icon svg_desc">
         </div>
-        <div class="box_descricao">
+        <ul >
+        <ul class="box_descricao details"data-anime="left">
+            <li>Harmonização Facial</li>
+            <li>Toxina Botulinica (botox)</li>
+            <li>Preenchimentos</li>
+            <li>Rinomodelação</li>
+            <li>Peelings quimicos</li>
+            <li>Skinbooster</li>
+            <li>Microagulhamento</li>
+            <li>Lifting de pálpebras sem corte</li>
+        </ul>
+        <div class="box_descricao" data-anime="right">
             <p class="descricao">Tratamentos corporais</p>
-            <img src="imagens/SVG/chevron-down-solid.svg" alt="seta" class="imagens svg_desc">
+            <img src="imagens/SVG/chevron-down-solid.svg" alt="seta" class="icon svg_desc">
         </div>
+        <ul class="box_descricao details" data-anime="right">
+            <li>Tratamento para flacidez</li>
+            <li>Estrias</li>
+            <li>Gordura localizada</li>
+            <li>Definição e recuperação muscular</li>
+            <li>Secagem de micro vasos</li>
+            <li>Emagrecimento com prescrição de nutracêuticos</li>
+        </ul>
 
     </section>
 
     <section id="contatos">
 
-        <div id="contatos_left" class="contatos_size">
+        <div id="contatos_left" class="contatos_size" data-anime="left">
 
             <h2 class="fale titulo">Contatos</h2>
             <hr class="linha" size="4" color="#FFDED3" width="60%">
             <div class="info">
-                <img src="imagens/SVG/phone-alt-solid.svg" alt="telefone" class="imagens">
+                <img src="imagens/SVG/phone-alt-solid.svg" alt="telefone" class="icon">
                 <p class="info_texto">+55 (11) 992740889</p>
             </div>
             <div class="info">
-                <img src="imagens/SVG/envelope-regular.svg" alt="email" class="imagens">
+                <img src="imagens/SVG/envelope-regular.svg" alt="email" class="icon">
                 <p class="info_texto">febaritti.fb@gmail.com</p>
             </div>
             <div class="info">
-                <img src="imagens/SVG/map-marker-alt-solid.svg" alt="mapa" class="imagens">
+                <img src="imagens/SVG/map-marker-alt-solid.svg" alt="mapa" class="icon">
                 <p class="info_texto">Santo André - SP</p>
             </div>
 
         </div>
 
-        <div id="contatos_right" class="contatos_size">
+        <div id="contatos_right" class="contatos_size" data-anime="right">
 
             <h2 class="fale titulo">Redes Sociais</h2>
             <hr class="linha" size="4" color="#FFDED3" width="60%">
-            <div class="info">
-                <a href="/" target="_blank" rel="next"><img src="imagens/SVG/facebook-brands.svg" alt="facebook-icon" class="imagens"></a>
-                <a href="/" target="_blank" rel="next"><p class="info_texto link">Facebook</p></a>
+            <div class="info social">
+                <a href="/" target="_blank" rel="next"><img src="imagens/SVG/facebook-brands.svg" alt="facebook-icon" class="imagens "></a>
+                <a href="/" target="_blank" rel="next"><p class="info_texto ">Facebook</p></a>
             </div>
-            <div class="info">
-                <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5511992740889&e=ATPjg1MWTMpz9c0fdrLVs3Xz1dL457as9KCp1-ek4BDbwn3mhAO56tlYvuM78FU2TChucujPG7OLPMAeqJeeVx9fnUt258njuyh1Qg&s=1" target="_blank" rel="next"><img src="imagens/SVG/whatsapp-brands.svg" alt="whatsapp-icon" class="imagens"></a>
-                <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5511992740889&e=ATPjg1MWTMpz9c0fdrLVs3Xz1dL457as9KCp1-ek4BDbwn3mhAO56tlYvuM78FU2TChucujPG7OLPMAeqJeeVx9fnUt258njuyh1Qg&s=1" target="_blank" rel="next"><p class="info_texto link">WhatsApp</p></a>
+            <div class="info social">
+                <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5511992740889&e=ATPjg1MWTMpz9c0fdrLVs3Xz1dL457as9KCp1-ek4BDbwn3mhAO56tlYvuM78FU2TChucujPG7OLPMAeqJeeVx9fnUt258njuyh1Qg&s=1" target="_blank" rel="next"><img src="imagens/SVG/whatsapp-brands.svg" alt="whatsapp-icon" class="imagens "></a>
+                <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5511992740889&e=ATPjg1MWTMpz9c0fdrLVs3Xz1dL457as9KCp1-ek4BDbwn3mhAO56tlYvuM78FU2TChucujPG7OLPMAeqJeeVx9fnUt258njuyh1Qg&s=1" target="_blank" rel="next"><p class="info_texto ">WhatsApp</p></a>
             </div>
-            <div class="info">
-                <a href="https://www.instagram.com/fernanda_palaciob/" target="_blank" rel="next"><img src="imagens/SVG/instagram-brands.svg" alt="instagram-icon" class="imagens"></a>
-                <a href="https://www.instagram.com/fernanda_palaciob/" target="_blank" rel="next"><p class="info_texto link">Instagram</p></a>
+            <div class="info social">
+                <a href="https://www.instagram.com/fernanda_palaciob/" target="_blank" rel="next"><img src="imagens/SVG/instagram-brands.svg" alt="instagram-icon" class="imagens "></a>
+                <a href="https://www.instagram.com/fernanda_palaciob/" target="_blank" rel="next"><p class="info_texto ">Instagram</p></a>
             </div>
 
         </div>
@@ -120,19 +137,19 @@
 
     <footer id="footer">
 
-        <div id="copy">
+        <div id="copy" class="footer_info">
 
-            <img src="imagens/SVG/copyright-regular.svg" alt="copyright_icon" class="footer_icon">
-            <p class="footer_texto">2021 Fernanda Palacio. Todos os direitos reservados.</p>
+            <img src="imagens/SVG/copyright-regular.svg" alt="copyright_icon" class="icon  estilo">
+            <p class="footer_texto estilo">2021 Fernanda Palacio. Todos os direitos reservados.</p>
 
         </div>
 
-        <div>
+        <div class="footer_info">
 
-            <p class="footer_texto">Desenvolvido por Cauê</p>
-            <a href="https://api.whatsapp.com/send?phone=5511998647783&text=Cau%C3%AA%20-%20Desenvolvedor%20Web" target="_blank" rel="next"><img src="imagens/SVG/whatsapp-brands.svg" alt="whats_dev" class="footer_icon"></a>
-            <a href="https://www.instagram.com/cauegracioli/" target="_blank" rel="next"><img src="imagens/SVG/instagram-brands.svg" alt="instagram-dev" class="footer_icon"></a>
-            <a href="https://github.com/cauegraciolip" target="_blank" rel="next"><img src="imagens/SVG/github-brands.svg" alt="git_dev" class="footer_icon"></a>
+            <p class="footer_texto estilo">Desenvolvido por Cauê</p>
+            <a href="https://api.whatsapp.com/send?phone=5511998647783&text=Cau%C3%AA%20-%20Desenvolvedor%20Web" target="_blank" rel="next"><img src="imagens/SVG/whatsapp-brands.svg" alt="whats_dev" class="icon estilo social_dev"></a>
+            <a href="https://www.instagram.com/cauegracioli/" target="_blank" rel="next"><img src="imagens/SVG/instagram-brands.svg" alt="instagram-dev" class="icon estilo social_dev"></a>
+            <a href="https://github.com/cauegraciolip" target="_blank" rel="next"><img src="imagens/SVG/github-brands.svg" alt="git_dev" class="icon estilo social_dev"></a>
 
         </div>
 
