@@ -19,6 +19,7 @@
     --azul: #2D394B;
     --azul-escuro: #121D2D;
     --marrom: #927F79;
+    --branco: #ffffff;
 
 }
 
@@ -61,7 +62,6 @@
 }
 
 .titulo {
-    font-family: 'Lato', sans-serif;
     font-size: 4rem;
     color: var(--azul);
     letter-spacing: 0.3rem;
@@ -79,7 +79,6 @@
 
 .texto {
     font-size: 1.8rem;
-    font-family: 'Lato', sans-serif;
     color: var(--cinza);
     width: 80%;
     line-height: 2.7rem;
@@ -90,9 +89,185 @@
 .maos {
     position: absolute;
     top: 21.3rem;
+    transition: 0.5s;
+}
+
+.maos:hover {
+    transform: translate3d(20px, 0, 0);
+    transition: 0.5s;
 }
 
 .bg {
     padding-top: 2.7rem;
 }
 
+#saiba_mais {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#saiba_right {
+    display: block;
+    width: 35%;
+}
+
+.saiba {
+    text-align: center;
+    padding-bottom: 2.4rem;
+}
+
+.sub {
+    color: var(--azul);
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    padding: 1rem 0rem;
+    line-height: 3rem;
+}
+
+.texto_about {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    padding: 2.4rem 0rem 4rem 0rem;
+    width: 100%;
+}
+
+.btn {
+    font-size: 1.5rem;
+    color: var(--azul-escuro);
+    border: 2px solid var(--rosa-claro);
+    border-radius: 0.7rem;
+    padding: 1.2rem 2.5rem;
+    transition: 0.5s;
+    font-weight: 700;
+    letter-spacing: .3em;
+}
+
+.btn:hover {
+    background-color: var(--rosa-claro);
+    transition: 0.5s;
+}
+
+.foto_about {
+    margin: 8rem 3rem;
+    -webkit-box-shadow: -30px 30px 0px -2px #FFDED3; 
+    box-shadow: -30px 30px 0px -2px #FFDED3;
+    transition: 0.5s;
+}
+
+.foto_about:hover {
+    transform: translate3d(10px, 0, 0);
+    -webkit-box-shadow: -15px 15px 0px -2px #FFDED3; 
+    box-shadow: -15px 15px 0px -2px #FFDED3;
+    transition: 0.5s;
+}
+
+.imagens {
+    width: 23px;
+    filter: invert(9%) sepia(7%) saturate(4393%) hue-rotate(177deg) brightness(100%) contrast(95%);
+}
+
+.footer_icon {
+    width: 20px;
+    filter: invert(9%) sepia(7%) saturate(4393%) hue-rotate(177deg) brightness(100%) contrast(95%);
+}
+
+#servicos {
+    background-color: #F7F7FC;
+    margin: 0 auto;
+    padding: 0rem 2rem 8rem 2rem;
+    background-image: url(/imagens/images/canto_servicos-cut.png);
+    background-repeat: no-repeat;
+}
+
+.serv_title {
+    text-align: center;
+    padding: 4rem;
+    font-weight: 400;
+}
+
+.forma {
+    position: absolute;
+    border-bottom: 42.4rem solid var(--rosa-claro);
+    border-left: 0rem solid transparent;
+    border-right: 20rem solid transparent;
+    left: 0;
+    height: 0;
+    width: 35rem;
+}
+
+.box_descricao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    color: var(--azul);
+    font-size: 2rem;
+    padding: 2.2rem 2.5rem 2.2rem 2rem;
+    width: 80%;
+    border-radius: 10px;
+    background-color: var(--branco);
+    margin: 2rem auto;
+    margin-bottom: 3rem;
+    -webkit-box-shadow: 7px 7px 15px -2px rgba(102,102,102,0.10); 
+    box-shadow: 7px 7px 15px -2px rgba(102,102,102,0.10); 
+    transition: .9s;
+    cursor: pointer;   
+}
+
+.box_descricao:hover {
+    -webkit-box-shadow: 7px 7px 15px -2px rgba(102,102,102,0.5); 
+    box-shadow: 7px 7px 15px -2px rgba(102,102,102,0.5); 
+    transition: .3s;
+}
+
+.svg_desc {
+    filter: invert(54%) sepia(8%) saturate(677%) hue-rotate(328deg) brightness(93%) contrast(86%);
+    cursor: pointer;
+}
+
+#contatos {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.contatos_size {
+    width: 50%;
+    padding: 2rem;
+}
+
+.fale {
+    padding-bottom: 1rem;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    padding-left: 0rem;
+}
+
+.info_texto {
+    padding-left: .7rem;
+    font-size: 1.8rem;
+    color: var(--cinza);
+}
+
+.link {
+}
+
+.link::before {
+    content: "";
+    width: 0;
+    text-decoration: underline;
+    padding-bottom: .5rem;
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+
+.link:hover {
+    content: "";
+    width: 100%;
+}
