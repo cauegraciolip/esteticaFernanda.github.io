@@ -14,7 +14,7 @@
 
 :root {
     
-    --rosa-claro: #FFDED3;
+    --rosa-claro: rgb(255, 222, 211);
     --cinza: #666666;
     --azul: #2D394B;
     --azul-escuro: #121D2D;
@@ -157,8 +157,12 @@
 
 #servicos {
     background-color: #F7F7FC;
-    margin: 0 auto;
-    padding: 0rem 2rem 8rem 2rem;
+    margin: auto;
+    padding: 0rem 2rem 4rem 2rem;
+    background-image: url(../imagens/SVG/wickedbackground.svg);
+    background-size: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .serv_title {
@@ -179,8 +183,14 @@
     width: 80%;
     border-radius: 10px;
     margin: 2rem auto;
+    margin-bottom: 0.5rem;
     transition: .9s;
     cursor: pointer;   
+}
+
+.descricao {
+    color: var(--azul-escuro);
+    font-weight: 700;
 }
 
 .box_descricao:hover {
@@ -198,8 +208,13 @@
 .svg_desc {
     filter: invert(54%) sepia(8%) saturate(677%) hue-rotate(328deg) brightness(93%) contrast(86%);
     cursor: pointer;
+    transform: rotate(0);
+    transition: .5s;
 }
 
+.seta {
+    transform: rotate(180deg);
+}
 
 .imagens {
     width: 23px;
@@ -207,21 +222,29 @@
 }
 
 .details {
-    display: block;
-    background-color: #F7F7FC;
-    border-top-left-radius: 0rem;
-    border-top-right-radius: 0rem;
+    display: none;
+    margin-top: 0rem;
 }
 
-.details:hover {
-    background-color: #F7F7FC;
+.lista_item {
+    transform: translateX(1rem);
+}
+
+.myClass {
+    display: block;
+    color: var(--azul);
+    font-size: 1.6rem;
+    background-color: var(--branco);
+    padding: 2.2rem 2.5rem 2.2rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
     box-shadow: none;
 }
 
-.details > li {
-    padding-bottom: 1rem;
+.details > li:not(:last-child) {
+    padding-bottom: 2rem;
 }
-
 
 #contatos {
     display: flex;

@@ -63,12 +63,12 @@
 
         <h2 class="titulo serv_title" data-anime="top">NOSSOS SERVIÇOS</h2>
 
-        <div class="box_descricao" data-anime="left">
+        <div onclick="showFace()" class="box_descricao show">
             <p class="descricao">Tratamentos faciais</p>
-            <img src="imagens/SVG/chevron-down-solid.svg" alt="seta" class="icon svg_desc">
+            <img src="imagens/SVG/chevron-down-solid.svg" alt="seta" id="setaFace" class="icon svg_desc">
         </div>
         <ul >
-        <ul class="box_descricao details"data-anime="left">
+        <ul id="face" class="box_descricao details" data-anime="left">
             <li>Harmonização Facial</li>
             <li>Toxina Botulinica (botox)</li>
             <li>Preenchimentos</li>
@@ -78,11 +78,11 @@
             <li>Microagulhamento</li>
             <li>Lifting de pálpebras sem corte</li>
         </ul>
-        <div class="box_descricao" data-anime="right">
+        <div onclick="showBody()" id="body_details" class="box_descricao">
             <p class="descricao">Tratamentos corporais</p>
-            <img src="imagens/SVG/chevron-down-solid.svg" alt="seta" class="icon svg_desc">
+            <img src="imagens/SVG/chevron-down-solid.svg" alt="seta" id="setaBody" class="icon svg_desc">
         </div>
-        <ul class="box_descricao details" data-anime="right">
+        <ul id="body" class="box_descricao details">
             <li>Tratamento para flacidez</li>
             <li>Estrias</li>
             <li>Gordura localizada</li>
@@ -95,7 +95,7 @@
 
     <section id="contatos">
 
-        <div id="contatos_left" class="contatos_size" data-anime="left">
+        <div id="contatos_left" class="contatos_size">
 
             <h2 class="fale titulo">Contatos</h2>
             <hr class="linha" size="4" color="#FFDED3" width="60%">
@@ -114,7 +114,7 @@
 
         </div>
 
-        <div id="contatos_right" class="contatos_size" data-anime="right">
+        <div id="contatos_right" class="contatos_size">
 
             <h2 class="fale titulo">Redes Sociais</h2>
             <hr class="linha" size="4" color="#FFDED3" width="60%">
