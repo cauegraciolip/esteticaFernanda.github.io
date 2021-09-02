@@ -32,17 +32,18 @@
 }
 
 #logo {
+    font-size: clamp(2.5rem, 10vw, 5.4rem);
     font-family: 'Sacramento', cursive;
-    font-size: 5.4rem;
     font-weight: 400;
     text-align: center;
     height: 50px;
 }
 
 #sub_logo {
+    font-size: clamp(1rem, 4vw, 1.9rem);
+    padding-top: 0.3rem;
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
-    font-size: 1.6rem;
     text-align: center;
 }
 
@@ -62,7 +63,7 @@
 }
 
 .titulo {
-    font-size: 4rem;
+    font-size: clamp(2.3rem, 5vw, 4rem);
     color: var(--azul);
     letter-spacing: 0.3rem;
     font-weight: 400;
@@ -78,7 +79,7 @@
 }
 
 .texto {
-    font-size: 1.8rem;
+    font-size: clamp(1.3rem, 4vw, 1.8rem);
     color: var(--cinza);
     width: 80%;
     line-height: 2.7rem;
@@ -112,6 +113,7 @@
 }
 
 .sub {
+    font-size: clamp(1.8rem, 5vw, 2.2rem);
     color: var(--azul);
     font-weight: 400;
     letter-spacing: 0.2em;
@@ -127,7 +129,7 @@
 }
 
 .btn {
-    font-size: 1.5rem;
+    font-size: clamp(1.1rem, 4vw, 1.5rem);
     color: var(--azul-escuro);
     border: 2px solid var(--rosa-claro);
     border-radius: 0.7rem;
@@ -144,6 +146,7 @@
 
 .foto_about {
     margin: 8rem 3rem;
+    height: auto;
     -webkit-box-shadow: -30px 30px 0px -2px #FFDED3; 
     box-shadow: -30px 30px 0px -2px #FFDED3;
     transition: 0.5s;
@@ -189,6 +192,7 @@
 }
 
 .descricao {
+    font-size: clamp(0.9rem, 4vw, 1.7rem);
     color: var(--azul-escuro);
     font-weight: 700;
 }
@@ -324,6 +328,136 @@
     transition: .2s
 }
 
+/* Media Queries */
+
+@media only screen and (max-width: 900px) {
+    .foto_about {
+       width: 85%;
+    }
+}
+
+@media only screen and (max-width: 812px) {
+
+    #saiba_mais {
+        display: block;
+    }
+
+    #saiba_right {
+        margin: auto;
+        width: 80%;
+        padding-bottom: 5rem;
+    }
+
+    .foto_about {
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        width: 45%;
+    }
+}
+
+@media (max-width: 780px) {
+
+    #main, #saiba_mais {
+        display: block;
+        padding: 0rem 1.2rem 3rem 1.2rem;
+        height: auto;
+    }
+
+    #main_left, #saiba_mais {
+        width: 100%;
+    }
+
+    #main_left {
+        width: 100%;
+        margin: auto;
+    }
+
+    #main_right {
+        display: none;
+    }
+
+    #saiba_right {
+        margin: auto;
+        padding-bottom: 5rem;
+        width: 80%;
+    }
+
+    .foto_about {
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        width: 40%;
+    }
+
+    .bg {
+        position: relative;
+    }
+
+    .box_descricao {
+        padding: 1.8rem 2.3rem 1.8rem 1.5rem;
+        width: 90%;
+        margin: 1.4rem auto;
+    }
+}
+
+@media only screen and (max-width: 714px) {
+    #footer {
+        display: block;
+        text-align: center;
+    }
+
+    .footer_info {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    #saiba_mais {
+        padding: 2rem 0rem;
+    }
+
+    #saiba_left {
+        display: none;
+    }
+
+    #contatos {
+        display: block;
+    }
+
+    .contatos_size {
+        width: 90%;
+    }
+
+    #contatos_left {
+        border: none;
+        border-bottom: 1px solid rgba(102, 102, 102, 0.205);
+    }
+}
+
+@media only screen and (max-width: 414px) {
+
+    #main {
+        padding-bottom: 3rem;
+    }
+
+    .btn {
+        padding: 1rem 2.2rem;
+    }
+
+    .box_descricao {
+        width: 98%;
+        padding: 1.6rem 2.1rem 1.6rem 1.2rem;
+        margin: 1.4rem auto;
+    }
+
+    .serv_title {
+        padding: 2.5rem;
+    }
+
+}
+
 /*Animação*/
 
 [data-anime] {
@@ -346,4 +480,83 @@
 [data-anime].animado {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+}
+
+/* page sobre */
+
+#sobre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    background-image: url(../imagens/images/bg-sobre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#foto {
+    width: 40%;
+}
+
+#foto_perfil {
+    border-radius: 100%;
+    -webkit-transition: 0.5s;
+    transition: 0.2s;
+}
+
+#foto_perfil:hover {
+    transform: scale(1.01);
+    -webkit-transition: 0.5s;
+    transition: 0.2s;
+}
+
+#bio {
+    width: 55%;
+}
+
+#bio > .texto {
+    width: 100%;
+    margin: auto;
+}
+
+#btn_sobre {
+    margin-top: 3rem;
+    background-color: var(--rosa-claro);
+    transition: 0.5s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+#btn_sobre:hover {
+    color: var(--rosa-claro);
+    background-color: var(--azul);
+    transition: 0.5s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    border: 1px solid var(--azul);
+}
+.sobre {
+    padding-top: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+
+    #sobre {
+        display: block;
+    }
+
+    #foto {
+        width: 50%;
+        margin: auto;
+    }
+
+    #bio {
+        width: 90%;
+        margin: auto;
+    }
 }
