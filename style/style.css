@@ -47,6 +47,10 @@
     text-align: center;
 }
 
+.color_link {
+    color: var(--azul-escuro);
+}
+
 #main {
     display: flex;
     justify-content: space-between;
@@ -87,9 +91,10 @@
     padding-top: 2rem;
 }
 
-.maos {
+.img_main {
     position: absolute;
-    top: 21.3rem;
+    top: 16.3rem;
+    right: 9em;
 }
 
 .bg {
@@ -375,6 +380,7 @@
 
     #main_right {
         display: none;
+        width: 100%;
     }
 
     #saiba_right {
@@ -388,10 +394,6 @@
         margin-top: 2rem;
         margin-bottom: 4rem;
         width: 40%;
-    }
-
-    .bg {
-        position: relative;
     }
 
     .box_descricao {
